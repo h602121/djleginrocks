@@ -1,0 +1,65 @@
+/* General Body Background */
+body {
+  background-color: #f0f5fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header background */
+header {
+  background-color: #000046;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav button {
+  background-color: #000046;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav button:hover {
+  background-color: #64dc78; /* Green hover */
+}
+
+/* Content Styling */
+.content {
+  padding: 2rem;
+}
+
+h2 {
+  color: #64648c; /* Title color */
+}
+
+/* Form Styling */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  background-color: #e6ebf5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #000046;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #64dc78;
+}

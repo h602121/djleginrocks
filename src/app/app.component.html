@@ -1,3 +1,49 @@
-<h1>asdasdasd!!!!!!</h1>
+<header>
+  <h1>Welcome to Bournemouth</h1>
+  <nav>
+    <button (click)="navigate('home')">Home</button>
+    <button (click)="navigate('tourist-attractions')">
+      Tourist Attractions
+    </button>
+    <button (click)="navigate('contact')">Contact</button>
+  </nav>
+</header>
 
-<router-outlet />
+<div class="content">
+  <!-- Home View -->
+  <div *ngIf="currentView === 'home'">
+    <h2>About Bournemouth</h2>
+    <p>
+      Bournemouth is a coastal town on the southern coast of England, known for
+      its beautiful beaches, vibrant nightlife, and Victorian architecture.
+    </p>
+  </div>
+
+  <!-- Tourist Attractions View -->
+  <div *ngIf="currentView === 'tourist-attractions'">
+    <h2>Top Tourist Attractions</h2>
+    <ul>
+      <li>Bournemouth Pier</li>
+      <li>Bournemouth Beach</li>
+      <li>Russell-Cotes Art Gallery & Museum</li>
+      <li>Lower Gardens</li>
+    </ul>
+  </div>
+
+  <!-- Contact View -->
+  <div *ngIf="currentView === 'contact'">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Your message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
